@@ -63,25 +63,25 @@ form.onsubmit = function(e) {
             console.log("case1 passed");
             document.getElementById("text1").innerText = "GOOD MORNING!! WAKE UP !!";
             document.getElementById('text2').innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
-            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(/Users/gegerot/Full_Stack_files/JS_Project/Project1_copy/st1.svg)"
+            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(./st1.svg)"
     
         } else if((parseInt(calcTime(str)) >= timeArray[1]) && (parseInt(calcTime(str)) < timeArray[2])) {
             console.log("case2 passed");
             document.getElementById("text1").innerText = "GOOD AFTERNOON!! WORK HARD!!";
             document.getElementById('text2').innerText = "LET'S HAVE SOME LUNCH"
-            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(/Users/gegerot/Full_Stack_files/JS_Project/Project1_copy/img2.svg)"
+            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(./img2.svg)"
     
         } else if((parseInt(calcTime(str)) >= timeArray[2]) && (parseInt(calcTime(str)) < timeArray[3])) {
             console.log("case3 passed");
             document.getElementById("text1").innerText = "GOOD EVENING!!";
             document.getElementById('text2').innerText = "STOP YAWNING, GET SOME TEA ITS JUST EVENING";
-            document.getElementsByClassName("picture")[0].style.backgroundImage =  "url(/Users/gegerot/Full_Stack_files/JS_Project/Project1_copy/lunch_image.png)";
+            document.getElementsByClassName("picture")[0].style.backgroundImage =  "url(./lunch_image.png)";
     
         } else if((parseInt(calcTime(str)) >= timeArray[3]) || (parseInt(calcTime(str)) < timeArray[0])) {
             console.log("case4 passed");
             document.getElementById("text1").innerText = "GOOD NIGHT!!";
             document.getElementById('text2').innerText = "GO TO BED AND GET SOME SLEEP!";
-            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(/Users/gegerot/Full_Stack_files/JS_Project/Project1_copy/night.png)";
+            document.getElementsByClassName("picture")[0].style.backgroundImage = "url(./night.png)";
     
         } 
     } 
