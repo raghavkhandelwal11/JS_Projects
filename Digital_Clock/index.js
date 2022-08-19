@@ -6,6 +6,9 @@ let options4 = form.time4.options;
 
 let timeArray = [];
 let element1 = document.getElementById('hrs');
+let element2 = document.getElementById("mins");
+let element3 = document.getElementById("secs");
+let element4 = document.getElementById("setHalf");
     
 
 form.onsubmit = function(e) {
@@ -113,6 +116,20 @@ $(document).ready(function() {
         this.innerText = "Party Time!";
     });
 });
+
+function clock() {
+    let today = new Date();
+    let hrs = today.getHours();
+    element2.innerText = today.getMinutes();
+    element3.innerText = today.getSeconds();
+
+    element4.innerText = (hrs < 12) ? "AM" : "PM";
+    element1.innerText = (hrs > 12) ? hrs - 12 : hrs;
+
+    var x = setInterval(clock, 1000);
+}
+
+
 
 
 

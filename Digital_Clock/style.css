@@ -208,7 +208,7 @@ h3  {
 .fix7 {
     position: relative;
     bottom: 15px;
-    font: normal normal normal Barlow;
+    font: normal Barlow;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
