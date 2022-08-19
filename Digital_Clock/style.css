@@ -331,7 +331,13 @@ label {
 
 .alarm:hover {
     background-image: linear-gradient(293deg,  #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    font-size: 0;
     
+}
+
+.alarm:hover::after {
+    font-size: 20px;
+    content: "Party Time!";
 }
 
 
